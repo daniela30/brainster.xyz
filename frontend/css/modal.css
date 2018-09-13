@@ -1,0 +1,105 @@
+.modal-header {
+    background: #FDDC13;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.modal-dialog {
+    border: none;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+.modal-content {
+    border-color: transparent;
+    border-bottom: none;
+
+}
+
+.modal-open .modal {
+    background: transparent;
+}
+
+.modal-body {
+    padding: 30px;
+    padding-bottom: 20px;
+    border-top: none;
+    border-left-color: #e5e5e5;
+    border-right-color: #e5e5e5;
+
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.send {
+    background: #FDDC13;
+    color: white;
+}
+
+.send:hover {
+    color: #383838;
+}
+
+.modal-set {
+    color: white;
+    background-color: blue;
+}
+
+.nav-lista a:focus, .nav-lista a:focus, .nav-lista a:hover {
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+.border {
+    color: #383838;
+}
+
+.border:focus {
+    border: 1.5px solid #FDDC13;
+    outline-color: transparent;
+    box-shadow: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+@media (max-width: 450px) {
+    .modal-dialog {
+        width: auto;
+    }
+}
+
+.fade.in {
+    animation-name: unfoldIn;
+    animation-duration: 1.2s;
+
+}
+
+@keyframes unfoldIn {
+    0% {
+        transform: scaleY(.005) scaleX(0);
+    }
+    50% {
+        transform: scaleY(.005) scaleX(1);
+    }
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
+}
+
+@keyframes unfoldOut {
+    0% {
+        transform: scaleY(1) scaleX(1);
+    }
+    50% {
+        transform: scaleY(.005) scaleX(1);
+    }
+    100% {
+        transform: scaleY(.005) scaleX(0);
+    }
+}
